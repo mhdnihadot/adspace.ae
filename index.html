@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="startupfounder.ae">
+    <meta property="og:title" content="startupfounder.ae">
+    <meta property="og:description" content="startupfounder.ae">
+    <meta property="og:image" content="./logo.png">
+    <link rel="icon" type="image/png" href="./logo.png">
+    <title>startupfounder.ae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            position: fixed;
+            touch-action: none;
+        }
+
+        /* Center the logo precisely in the middle of the screen */
+        .center-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 90vw;
+            max-height: 70vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Fix footer to the very bottom */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            footer {
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-container">
+        <img src="./logo.png" alt="Startup Founder" class="logo">
+    </div>
+
+    <footer>
+        © 2026 All rights reserved by startupfounder.ae
+    </footer>
+
+</body>
+</html>
